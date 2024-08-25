@@ -25,3 +25,7 @@ Dans cette section, nous allons aborder la conception complète du pendule inver
 ### Conception mécanique
 
 ![Shéma mécanique IP](./Media/shema_IP.png)
+
+Voici la structure mécanique du pendule. La barre rigide du pendule est fixée à un capteur angulaire qui permet une rotation libre tout en mesurant l'angle $\theta$. Ce capteur est monté sur un chariot qui peut se déplacer de manière rectiligne le long d'un axe pour maintenir la barre en équilibre. Le chariot est équipé de six roulements à billes disposés de manière à pincer un support fixe, garantissant ainsi un déplacement rectiligne sans frottement.
+
+Pour contrôler le déplacement rectiligne, j'utilise un moteur à courant continu qui entraîne une courroie d'imprimante 3D à laquelle le chariot est attaché. Afin de mesurer la postion selon l'axe _x_ (axe de liberté du chariot), la courroie est également racordé sur un capteur angulaire qui mesure le déplacement de la courroie et en déduit la position _x_ du chariot.
