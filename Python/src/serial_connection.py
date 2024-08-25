@@ -52,7 +52,7 @@ class Middleware:
     def step(self, output):
         status = output.get("s", None)
         match status:
-            case 1:  # rev data and need to send new command
+            case 1:  # rcv data and need to send new command
                 state = self.rcv_data(output)
                 command = self.get_command(state)
                 return {"c": command}
